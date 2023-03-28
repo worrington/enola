@@ -9,8 +9,7 @@ import About from '@/components/About';
 import Valor from '@/components/Valor';
 import Footer from '@/components/Footer';
 import Contacto from '@/components/Contacto';
-
-const inter = Inter({ subsets: ['latin'] })
+import Carrusel from '@/components/Carrusel';
 
 export default function Home() {
   return (
@@ -26,6 +25,7 @@ export default function Home() {
 			<SliderImage />
 			<About />
 			<Valor/>
+			<Carrusel />
 			<Contacto />
 			<Footer/>
 		</main>

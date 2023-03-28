@@ -30,7 +30,7 @@ return (
 							<div className="pad-1"></div>
 							<div className="icon-box">
 								<span className="border-layer "></span>
-								<i className="flaticon-windmill ">
+								<i className="flaticon-windmill">
 									<FaEnergia className="" size="5"/>
 								</i>
 							</div>

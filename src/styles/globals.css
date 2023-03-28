@@ -125,7 +125,7 @@ header {
 }
 
 .mask {
-  background-color: #f161214d;
+  background-color: #00000085;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -148,7 +148,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   padding-top: 150px;
-  padding: 0 15%;
+  padding: 0 8%;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -159,15 +159,16 @@ header {
 .title-slider {
   width: 100%;
   display: block;
-  font-size: 45px;
+  font-size: 60px;
   margin-bottom: 10px;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 500;
+  color: #ffffffb0;
   margin-top: -11rem;
   margin-top: 74px;
   text-align: center;
-  letter-spacing: 2px;
-  line-height: 40px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  line-height: 60px;
 }
 
 .subtitle-slider {
@@ -231,7 +232,8 @@ header {
   max-width: 100%;
 }
 .content-about {
-  margin-top: 4rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 /**/
 
@@ -249,7 +251,7 @@ header {
 .imagerotate99 {
   position: absolute;
   top: 0%;
-  right: 10%;
+  right: 16%;
   margin: 102px -179px 0px 0px;
   animation: pulse33bfdg 3s ease infinite alternate, pulse33bfdg 5s linear infinite alternate;
   opacity: 1;
@@ -274,12 +276,72 @@ header {
   background: linear-gradient(to bottom right, #f15e22, #fbb217);
   min-height: 15rem;
   width: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
-.input {
+.contacto-title {
+  color: #ffffffd4;
+  font-size: 2rem;
+}
 
+.mapa {
   width: 100%;
-    padding: 0.5rem;
+  height: auto;
+}
+
+.mapa-title {
+  color: #ffffffd4;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.mapa-p {
+  color: #ffffffd4;
+  font-size: large;
+  padding-left: 1rem;
+}
+.input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.carousel-div {
+  padding: 0px 15px 0px 15px;
+}
+
+.carrucel-div button {
+  background-color: rgb(41 52 97)!important;
+  color: #fff!important;
+  box-shadow: 0 0 2px 0px #293461!important;
+}
+
+.cvyJEp:hover:enabled, .cvyJEp:focus:enabled {
+  color: #fff;
+  background-color: #293461!important;
+  box-shadow: 0 0 2px 0 #293461;
+}
+.cvyJEp {
+  color: #fff!important;
+  background-color: #fbb117!important;
+  box-shadow: 0 0 2px 0 #fbb117!important;
+}
+.cvyJEp:hover {
+  background-color: rgb(25, 29, 44)!important;
+  color: #fff!important;
+  box-shadow: 0 0 2px 0px #293461!important;
+}
+.dkjKVr {
+  background-color: rgb(156 154 158 / 18%);
+  color: #999;
+  box-shadow: 0 0 2px 0px #333
+}
+
+.cqQwrw {
+  margin: 5px;
+  background-color: rgb(251 177 23)!important;
+  box-shadow: 0 0 1px 3px rgb(246 135 28)!important;
 }
 @media (min-width: 1745.45px) and (max-width: 1745.45px) {
   .imagerotate99{	margin: 108px -143px 0px 0px; }
@@ -377,7 +439,22 @@ header {
 .container-card .icon-box .border-layer:hover {
   border: 2px solid #267cbb;
 }
+.container-card .icon-box .border-layer:hover ~ i {
+  color : #267cbb;
+}
 
+.container-card:hover ~ i {
+  color : #267cbb;
+}
+
+.container-card .icon-box:hover ~ .large-layer-border {
+  border: 2px solid #267cbb!important;
+  color : #267cbb;
+}
+
+i:hover {
+  color : #267cbb;
+}
 .container-card:hover .icon-box .border-layer{
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
@@ -428,6 +505,12 @@ header {
   padding-top: 1rem;
 }
 
+.contacto-pading {
+  padding-bottom: 4rem;
+}
+
+
+
 @media (max-width: 900px) {
   .large-layer {
     width: 100px!important;
@@ -438,10 +521,15 @@ header {
     height: 120px!important;
   }
   .pad-3 {
-    padding-top: 1rem;
+    padding-top: 2.8rem;
   }
   .v-fondo img {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  .mapa h3, p {
+    font-size: 14px;
   }
 }
 
@@ -471,6 +559,19 @@ header {
   animation: srotsun2 45s linear infinite;
 }
 
+.carrucel {
+  height: 250px;
+}
+
+.carrucel-div buttom {
+  color: white;
+  background: #293461;
+}
+
+.carrucel img {
+  width: auto;
+  height: 100%;
+}
 @-moz-keyframes hizmet-rot{0%{-moz-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}} 
 @keyframes hizmet-rot{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}
 
