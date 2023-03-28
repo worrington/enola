@@ -10,7 +10,7 @@ return (
 		<div className="mask" />
 		<div className="container">
 			<div className="swiper-slide">
-				<h1 className="title-slider">REVOLUCIONANDO <br/>LA ENERGÍA</h1>
+				<h1 className="title-slider">REVOLUCIONANDO LA ENERGÍA</h1>
 			</div>
 		</div>
 	</div>

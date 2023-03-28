@@ -15,13 +15,12 @@ return (
 		<Grid className="v-fondo">
 			<Image src={fondo} alt="" className="imagerotate99" />
 		</Grid>
-		<Grid container justifyContent="center" textAlign={"center"}>
-			<Typography gutterBottom variant="h3">
-				Nuevos Valores
+		<Grid container  justifyContent="center">
+			<Typography variant="h3" className="subtitle-main">
+				Nuevos valores
 			</Typography>
 		</Grid>
-		
-		<Grid container spacing={2} justifyContent="center">
+		<Grid container  justifyContent="center">
 			<Grid></Grid>
 			<Grid item xs={10} md={2} sm={5}>
 				<div className="deps2 wow fadeInLeft" data-wow-delay="0.5s">
@@ -31,7 +30,7 @@ return (
 							<div className="icon-box">
 								<span className="border-layer "></span>
 								<i className="flaticon-windmill">
-									<FaEnergia className="" size="5"/>
+									<FaEnergia className="" size={5}/>
 								</i>
 							</div>
 							<h3>Seguridad</h3>
@@ -49,7 +48,7 @@ return (
 							<div className="icon-box">
 								<span className="border-layer large-layer-border"></span>
 								<i className="flaticon-windmill large-layer">
-									<FaInnovacion className="" size="5"/>
+									<FaInnovacion className="" size={5}/>
 								</i>
 							</div>
 							<h3>Innovación</h3>
@@ -66,7 +65,7 @@ return (
 							<div className="icon-box">
 								<span className="border-layer "></span>
 								<i className="flaticon-windmill ">
-									<FaCompromiso className="" size="5"/>
+									<FaCompromiso className="" size={5}/>
 								</i>
 							</div>
 							<h3>Compromiso</h3>
@@ -83,7 +82,7 @@ return (
 							<div className="icon-box">
 								<span className="border-layer large-layer-border"></span>
 								<i className="flaticon-windmill large-layer">
-									<FaEtica className="" size="5"/>
+									<FaEtica className="" size={5}/>
 								</i>
 							</div>
 							<h3>Ética</h3>

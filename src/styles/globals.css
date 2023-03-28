@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Roboto:wght@100;300;400;500;900&display=swap');
 body {
   font-family: 'Roboto', sans-serif;
   color: #414042!important;
@@ -93,7 +93,8 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb))
+  background: rgb(var(--background-end-rgb));
+  max-height: 100vh;
 }
 
 a {
@@ -108,9 +109,20 @@ a {
 }
 
 header {
-  background-color: #ffff!important;
+  position: absolute!important;
+  z-index: 100!important;
+  background-color: #29346100!important;
+  box-shadow: 2px -8px 4px -1px rgb(0 0 0 / 0%), 0px 4px 5px 0px rgb(0 0 0 / 0%), 0px 1px 10px 0px rgb(0 0 0 / 0%)!important;
 }
 
+.MuiPaper-root header{
+  background-color: #293461!important;
+  position: relative!important;
+}
+.spacer-btw {
+  display: flex;
+  justify-content: space-between!important;
+}
 /* SLIDER*/
 .slider {
   height: 100vh;
@@ -125,7 +137,10 @@ header {
 }
 
 .mask {
-  background-color: #00000085;
+  background-color: transparent;
+  background-image: radial-gradient(at center center, #00478173 0%, #132634 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -162,13 +177,11 @@ header {
   font-size: 60px;
   margin-bottom: 10px;
   font-weight: 500;
-  color: #ffffffb0;
+  color: #ffffff;
   margin-top: -11rem;
   margin-top: 74px;
   text-align: center;
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  line-height: 60px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .subtitle-slider {
@@ -189,7 +202,44 @@ header {
   animation: srotsun2 45s linear infinite;
   width: 706px;
 }
+.subtitle-main {
+  color: #293461;
+  position: relative;
+  display: initial;
+  margin-bottom: 2rem;
+}
+.subtitle-main:before {
+  position: absolute;
+  content: '';
+  background: #267cbb;
+  width: 12px;
+  height: 12px;
+  left: -20px;
+  top: 42%;
+  border-radius: 50%;
+}
 
+.subtitle-main:after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  right: -20px;
+  top: 42%;
+  border-radius: 50%;
+  background: #fc7702;
+}
+.subtitle-secondary {
+  position: relative;
+  margin-top: 2rem;
+}
+.politicas {
+  padding: 2rem;
+}
+.politicas p {
+  padding-top: 2rem;
+}
 @media (max-width: 700px) {
   .slider {
     height: 59vh;
@@ -241,6 +291,7 @@ header {
   width: 100%;
   min-height: 30rem;
   position: relative;
+  padding: 2rem;
 }
 
 .v-fondo {

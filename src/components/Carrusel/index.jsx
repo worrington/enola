@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react'
 import Image from 'next/image';
 import {Grid, Typography, Hidden} from '@mui/material';
 import img1 from '@/Resources/galeria/2.jpg';
@@ -13,36 +14,29 @@ import img8 from '@/Resources/galeria/11.jpg';
 import Carousel from 'react-elastic-carousel';
 
 const Carrusel = () => {
+  let cpo = [];
+  let _cpmp = [];
+
+  cpo["_object"] ="cincopa_53e643";
+  cpo["_fid"] = "AICAU_OJEd97";
+  _cpmp.push(cpo);
+
+  const galery = () => {
+    let cp = document.createElement("script");
+    cp.src = "https://rtcdn.cincopa.com/libasync.js";
+    const c = document.getElementsByTagName("script")[0];
+    c.parentNode.insertBefore(cp, c);
+  };
+
+  useEffect(() => {
+  }, []);
 
   return (
     <Grid container justifyContent="center" className="pad-3">
       <Typography gutterBottom variant="h3">
 				 Galería
 			</Typography>
-      <Hidden mdUp>
-        <Carousel itemsToShow={1} className="carousel-div">
-          <div className="carrucel"><Image src={img1} alt="" /></div>
-          <div className="carrucel"><Image src={img6} alt="" /></div>
-          <div className="carrucel"><Image src={img4} alt="" /></div>
-          <div className="carrucel"><Image src={img2} alt="" /></div>
-          <div className="carrucel"><Image src={img5} alt="" /></div>
-          <div className="carrucel"><Image src={img3} alt="" /></div>
-          <div className="carrucel"><Image src={img8} alt="" /></div>
-          <div className="carrucel"><Image src={img7} alt="" /></div>
-        </Carousel>
-      </Hidden>
-      <Hidden mdDown>
-        <Carousel itemsToShow={3} className="carousel-div">
-          <div className="carrucel"><Image src={img1} alt="" /></div>
-          <div className="carrucel"><Image src={img6} alt="" /></div>
-          <div className="carrucel"><Image src={img4} alt="" /></div>
-          <div className="carrucel"><Image src={img2} alt="" /></div>
-          <div className="carrucel"><Image src={img5} alt="" /></div>
-          <div className="carrucel"><Image src={img3} alt="" /></div>
-          <div className="carrucel"><Image src={img8} alt="" /></div>
-          <div className="carrucel"><Image src={img7} alt="" /></div>
-        </Carousel>
-      </Hidden>
+      <div id="cincopa_53e643"></div>
       <style jsx global>{`
         .MuiSnackbar-root {
           left: auto!important;

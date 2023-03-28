@@ -7,21 +7,30 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image';
 import enola from 'public/enola_logo_completo.png';
 
 const pages = ['Misión y Visión', 'Nosotros', 'Valores', 'Contacto'];
-const settings = [''];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [scrollValue, setScrollValue] = React.useState(0);
 
+  React.useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+  }, [window.scrollY]);
+
+  
+  const onScroll = (e:any) => {
+    setScrollValue(window.scrollY);
+  };
+  
+  window.addEventListener('scroll', onScroll)
+  
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -40,7 +49,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters className='spacer-btw'>
           <Image src={enola} alt="Enola" style={{height : "44px", width : "auto"}}/>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -89,6 +98,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          {scrollValue}
         </Toolbar>
       </Container>
     </AppBar>
