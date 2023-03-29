@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image';
-import video from '@/Resources/enolavideo-min2.gif';
+import video from '@/Resources/enolavideo.gif';
 
 const SliderImage: React.FC = () => {
 
