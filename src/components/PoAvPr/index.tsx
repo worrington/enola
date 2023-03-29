@@ -20,7 +20,7 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function Aviso() {
+export default function Politicas() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -32,9 +32,9 @@ export default function Aviso() {
   };
 
   return (
-    <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Politicas de Privacidad
+    <>
+      <Button variant="text" onClick={handleClickOpen} style={{color:"white", textTransform: "initial"}}>
+        Politicas de privacidad
       </Button>
       <Dialog
         fullScreen
@@ -107,6 +107,6 @@ export default function Aviso() {
                     Enola Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
             </div>
       </Dialog>
-    </div>
+    </>
   );
 }

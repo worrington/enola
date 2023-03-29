@@ -5,7 +5,6 @@ import enola from 'public/enola_logo_completo.png';
 import mapa from '@/Resources/world-map-dark-2.png';
 import pin from '@/Resources/icons/pin-map-2.png';
 import { Grid, TextField, Button, Snackbar, Alert } from '@mui/material';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
 
 const URL_FORM = "https://formspree.io/f/mvonwogw";
 
@@ -23,7 +22,6 @@ function Contacto() {
     if(formData.name.length === 0|| formData.email.length === 0|| formData.message.length === 0){
       setOpen2(true);
     } else {
-      
       submit();
     }
   };
@@ -73,9 +71,14 @@ function Contacto() {
       </Snackbar>
       <Grid container justifyContent="flex-end" className="contacto-pading" spacing={3}>
         <Grid item xs={12} className="pad-3">
-          <h2 className="contacto-title">Contacto</h2>
+          <div>
+            <h3 className="contacto-title pad-3" id="contacto">Contacto</h3>
+          </div>
         </Grid>
         <Grid item xs={12} md={6}>
+          <Grid>
+          <p className="mapa-title">¡Nos encantaría saber de usted! Complete el formulario correspondiente  y le responderemos de manera oportuna.</p>
+          </Grid>
           <Grid>
             <TextField
               label="Nombre"
@@ -83,6 +86,7 @@ function Contacto() {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              margin="normal"
             />
           </Grid>
           <Grid>
@@ -93,49 +97,47 @@ function Contacto() {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              margin="normal"
             />
           </Grid>
+          <Grid>
+            <TextField
+              label="Mensaje"
+              variant="filled"
+              rows={5}
+              multiline
+              style={{
+                height : 148
+              }}
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              margin="normal"
+            />
+          </Grid>
+          <Grid item className="pad-1" style={{textAlign: "center", paddingBottom: "2.5rem"}}>
+            <Button
+              variant="contained"
+              color="info"
+              style={{width: 200, backgroundColor: "#293461", textAlign: "end"}}
+              onClick={handleClick}
+            >
+              Envíar
+            </Button>
+          </Grid>
         </Grid>
+
         <Grid item xs={12} md={6}>
-          <TextField
-            label="Mensaje"
-            variant="filled"
-            rows={4}
-            multiline
-            style={{
-              height : 125
-            }}
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </Grid>
-        <Grid item>
-          <Button variant="contained" color="secondary" style={{width: 200}} onClick={handleClick}>
-            Envíar
-          </Button>
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        className="contacto-pading"
-      >
-        <Grid item xs={12} md={6}>
-          <h3 className="mapa-title">¿Dónde nos encontramos?</h3>
+          <p className="mapa-title">¿Dónde nos encontramos?</p>
+          <Image src={mapa} alt="" className="mapa"/>
           <Grid container justifyContent={"center"} alignItems="center">
             <Grid item>
               <Image src={pin} alt="" style={{width: 60, height: "auto"}}/></Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={10} sm={11}>
               <p className="mapa-p">Guillermo González Camarena No. 1450, Piso 2, int. 224,
               Santa Fe, Ciudad de México, C.P. 01210, Alcaldía Álvaro Obregón.</p></Grid>
             </Grid>
             <br />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Image src={mapa} alt="" className="mapa"/>
         </Grid>
       </Grid>
       <style jsx global>{`

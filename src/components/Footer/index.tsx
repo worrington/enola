@@ -3,7 +3,8 @@ import * as React from 'react';
 import Image from 'next/image';
 import enola from 'public/enola_logo_completo.png';
 import { Grid } from '@mui/material';
-import Aviso from '../PoAvPr';
+import Aviso from '../Aviso';
+import Politicas from '../PoAvPr';
 
 
 function Footer() {
@@ -16,12 +17,18 @@ function Footer() {
             width={"100%"}
             style={{border:0}}
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade">
+            referrerPolicy="no-referrer-when-downgrade"
+            title="map"
+          >
         </iframe>
       </Grid>
-    <div className="footer">
+    <div className="footer spacer-btw">
+
       <h4>Copyright © 2023 Enola. Todos los derechos reservados</h4>
-      <Aviso />
+      <div>
+        <Politicas /> |
+        <Aviso />
+      </div>
     </div>
     </>
   );
