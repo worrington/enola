@@ -12,19 +12,19 @@ import bg from 'public/fondos/bg.jpg';
 const About: React.FC = () => {
 
 return (
-	<div className="about">
+	<div className="about" id="nosotros">
 		<Grid>
 			<Image src={bg} alt="" className="bg-about"/>
 		</Grid>
 		<Grid container spacing={6} justifyContent="center" alignItems="center" className="content-about pad-3">
-			<Grid item xs={10} md={5} sm={10}>
+			<Grid item xs={10} md={5} sm={10} >
 				<Grid>
 					<Typography gutterBottom variant="h3" className="subtitle-main">
 						Sobre nosotros
 					</Typography>
 				</Grid>
 				<Grid>
-					<Typography variant="h5" color="text.secondary" className="subtitle-secondary">
+					<Typography variant="body1" color="text.secondary" className="subtitle-secondary">
 						Somos una empresa innovadora conformada por socios comerciales,
 							expertos en el sector energético. Contribuimos en ofrecer
 							energías más limpias y económicas para beneficios de los usuarios finales.

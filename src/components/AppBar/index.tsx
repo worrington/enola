@@ -13,23 +13,11 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import enola from 'public/enola_logo_completo.png';
 
-const pages = ['Misión y Visión', 'Nosotros', 'Valores', 'Contacto'];
+const pages = ['Nosotros', 'Valores', 'Galería', 'Contacto'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-  const [scrollValue, setScrollValue] = React.useState(0);
-
-  React.useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-  }, [window.scrollY]);
-
-  
-  const onScroll = (e:any) => {
-    setScrollValue(window.scrollY);
-  };
-  
-  window.addEventListener('scroll', onScroll)
   
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -45,6 +33,10 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const eliminarDiacriticos = (texto: String) => {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g,"");
+  }
 
   return (
     <AppBar position="static">
@@ -82,7 +74,9 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <a href={`#${eliminarDiacriticos(page.toLowerCase())}`}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -94,11 +88,12 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <a href={`#${eliminarDiacriticos(page.toLowerCase())}`}>
+                  {page}
+                </a>
               </Button>
             ))}
           </Box>
-          {scrollValue}
         </Toolbar>
       </Container>
     </AppBar>

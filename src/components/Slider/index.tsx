@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Image from 'next/image';
-import video from '@/Resources/enolavideo.gif';
+import video from '@/Resources/enolavideo-min2.gif';
 
 const SliderImage: React.FC = () => {
 
 return (
 	<div className="slider">
-		<Image src={video} alt="" className="img"/>
+		<Image src={video} alt="" className="img" unoptimized/>
 		<div className="mask" />
 		<div className="container">
 			<div className="swiper-slide">

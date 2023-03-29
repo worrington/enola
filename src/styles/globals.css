@@ -203,10 +203,12 @@ header {
   width: 706px;
 }
 .subtitle-main {
+  font-size: 40px;
   color: #293461;
   position: relative;
   display: initial;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 .subtitle-main:before {
   position: absolute;
@@ -233,6 +235,7 @@ header {
 .subtitle-secondary {
   position: relative;
   margin-top: 2rem;
+  font-size: 22px;
 }
 .politicas {
   padding: 2rem;
@@ -292,6 +295,7 @@ header {
   min-height: 30rem;
   position: relative;
   padding: 2rem;
+  text-align: center;
 }
 
 .v-fondo {
@@ -333,19 +337,29 @@ header {
 
 .contacto-title {
   color: #ffffffd4;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: 400;
+}
+
+.contacto-subtitle {
+  COLOR: #ffffffd4;
+  FONT-SIZE: 1.5rem;
+  padding: 5px 0px 19px 0px;
 }
 
 .mapa {
   width: 100%;
   height: auto;
+  padding-bottom: 1rem;
 }
 
 .mapa-title {
   color: #ffffffd4;
   font-size: 1.5rem;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .mapa-p {
@@ -362,38 +376,6 @@ header {
   padding: 0px 15px 0px 15px;
 }
 
-.carrucel-div button {
-  background-color: rgb(41 52 97)!important;
-  color: #fff!important;
-  box-shadow: 0 0 2px 0px #293461!important;
-}
-
-.cvyJEp:hover:enabled, .cvyJEp:focus:enabled {
-  color: #fff;
-  background-color: #293461!important;
-  box-shadow: 0 0 2px 0 #293461;
-}
-.cvyJEp {
-  color: #fff!important;
-  background-color: #fbb117!important;
-  box-shadow: 0 0 2px 0 #fbb117!important;
-}
-.cvyJEp:hover {
-  background-color: rgb(25, 29, 44)!important;
-  color: #fff!important;
-  box-shadow: 0 0 2px 0px #293461!important;
-}
-.dkjKVr {
-  background-color: rgb(156 154 158 / 18%);
-  color: #999;
-  box-shadow: 0 0 2px 0px #333
-}
-
-.cqQwrw {
-  margin: 5px;
-  background-color: rgb(251 177 23)!important;
-  box-shadow: 0 0 1px 3px rgb(246 135 28)!important;
-}
 @media (min-width: 1745.45px) and (max-width: 1745.45px) {
   .imagerotate99{	margin: 108px -143px 0px 0px; }
 }
