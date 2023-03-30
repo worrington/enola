@@ -1,33 +1,76 @@
 import * as React from 'react';
 import { useEffect } from 'react'
+import Image from 'next/image';
 import {Grid, Typography} from '@mui/material';
 
+import img1 from '@/Resources/galeria/2.jpg';
+import img2 from '@/Resources/galeria/3.jpg';
+import img3 from '@/Resources/galeria/6.jpg';
+import img4 from '@/Resources/galeria/7.jpg';
+import img5 from '@/Resources/galeria/8.jpg';
+import img6 from '@/Resources/galeria/9.jpg';
+import img7 from '@/Resources/galeria/10.jpg';
+import img8 from '@/Resources/galeria/11.jpg';
+
 const Carrusel = () => {
-
-    let cpo = [];
-    cpo["_object"] ="cincopa_3a98c7";
-    cpo["_fid"] = "AICAU_OJEd97";
-    let _cpmp = [];
-    _cpmp.push(cpo);
-
-    (function() {
-      let cp = document.createElement("script");
-      cp.type = "text/javascript";
-      cp.async = true;
-      cp.src = "https://rtcdn.cincopa.com/libasync.js";
-      const c = document.getElementsByTagName("script")[0];
-      c.parentNode.insertBefore(cp, c);
-    })();
-
-  useEffect(() => {
-  }, []);
-
   return (
     <Grid container justifyContent="center" className="pad-3">
-      <Typography variant="h3" className="subtitle-main" gutterBottom id="galeria">
+      <Typography variant="h2" className="subtitle-main" gutterBottom id="galeria">
         Galería
 			</Typography>
-      <div id="cincopa_53e643"></div>
+      <div className="acordeon-container">
+      <ul className="acordeon">
+        <li>
+          <Image alt="" src={img1} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img1} className="thumbnail" />
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img6} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img6} className="thumbnail"/>
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img4} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img4} className="thumbnail"/>
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img5} className="thumbnail2"/>
+          <div>
+            <Image alt="" src={img5} className="thumbnail2"/>
+          </div>
+        </li>
+        
+        <li>
+          <Image alt="" src={img7} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img7} className="thumbnail"/>
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img8} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img8} className="thumbnail"/>
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img3} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img3} className="thumbnail"/>
+          </div>
+        </li>
+        <li>
+          <Image alt="" src={img2} className="thumbnail"/>
+          <div>
+            <Image alt="" src={img2} className="thumbnail2"/>
+          </div>
+        </li>
+      </ul>
+      </div>
       <style jsx global>{`
         .MuiSnackbar-root {
           left: auto!important;

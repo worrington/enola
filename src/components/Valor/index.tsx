@@ -15,10 +15,10 @@ return (
 		<Grid className="v-fondo">
 			<Image src={fondo} alt="" className="imagerotate99" />
 		</Grid>
-		<div>
-			<h3 className="subtitle-main" id="valores">
+		<div style={{paddingBottom: "2rem"}}>
+			<h2 className="subtitle-main" id="valores">
 				Nuestros valores
-			</h3>
+			</h2>
 		</div>
 		<Grid container  justifyContent="center">
 			<Grid></Grid>

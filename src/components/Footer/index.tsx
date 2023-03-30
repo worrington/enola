@@ -22,14 +22,15 @@ function Footer() {
           >
         </iframe>
       </Grid>
-    <div className="footer spacer-btw">
-
-      <h4>Copyright © 2023 Enola. Todos los derechos reservados</h4>
+    <Grid container justifyContent="space-between" className="footer spacer-btw">
+      <Grid item xs={12} md={6}>
+        <h4 style={{padding: "0.5rem"}}>Copyright © 2023 Enola. Todos los derechos reservados</h4>
+      </Grid>
       <div>
         <Politicas /> |
         <Aviso />
       </div>
-    </div>
+    </Grid>
     </>
   );
 }
