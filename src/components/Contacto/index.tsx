@@ -71,8 +71,8 @@ function Contacto() {
       </Snackbar>
       <Grid container justifyContent="flex-end" className="contacto-pading" spacing={3}>
         <Grid item xs={12} className="pad-3">
-          <div>
-            <h3 className="contacto-title pad-3" id="contacto">Contacto</h3>
+          <div className="contacto-title-container">
+            <h2 className="contacto-title pad-3" id="contacto">Contacto</h2>
           </div>
         </Grid>
         <Grid item xs={12} md={6}>

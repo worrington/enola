@@ -15,10 +15,10 @@ return (
 		<Grid className="v-fondo">
 			<Image src={fondo} alt="" className="imagerotate99" />
 		</Grid>
-		<div>
-			<h3 className="subtitle-main" id="valores">
+		<div style={{paddingBottom: "2rem"}}>
+			<h2 className="subtitle-main" id="valores">
 				Nuestros valores
-			</h3>
+			</h2>
 		</div>
 		<Grid container  justifyContent="center">
 			<Grid></Grid>
@@ -33,7 +33,7 @@ return (
 									<FaEnergia className="" size={5}/>
 								</i>
 							</div>
-							<h4>Seguridad</h4>
+							<h3>Seguridad</h3>
 							<p>Garantizamos la seguridad principalmente de nuestros colaboradores,
 								 así como en el cumplimiento de nuestros compromisos.</p>
 						</div>
@@ -51,7 +51,7 @@ return (
 									<FaInnovacion className="" size={5}/>
 								</i>
 							</div>
-							<h4>Innovación</h4>
+							<h3>Innovación</h3>
 							<p>Estamos en constante crecimiento para dar soluciones novedosas y eficaces en todos nuestros procesos y servicios que brindamos a nuestros clientes.</p>
 						</div>
 					</div>
@@ -68,7 +68,7 @@ return (
 									<FaCompromiso className="" size={5}/>
 								</i>
 							</div>
-							<h4>Compromiso</h4>
+							<h3>Compromiso</h3>
 							<p>Nos enfocamos en contribuir en el desarrollo del país, bajo estándares de la más alta calidad.</p>
 						</div>
 					</div>
@@ -85,7 +85,7 @@ return (
 									<FaEtica className="" size={5}/>
 								</i>
 							</div>
-							<h4>Ética</h4>
+							<h3>Ética</h3>
 							<p>Nos regimos bajo las normas y principios establecidos, actuando con rectitud en cada situación que se presente. </p>
 						</div>
 					</div>

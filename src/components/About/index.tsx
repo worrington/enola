@@ -19,7 +19,7 @@ return (
 		<Grid container spacing={6} justifyContent="center" alignItems="center" className="content-about pad-3">
 			<Grid item xs={10} md={5} sm={10} >
 				<Grid>
-					<Typography gutterBottom variant="h3" className="subtitle-main">
+					<Typography gutterBottom variant="h2" className="subtitle-main">
 						Sobre nosotros
 					</Typography>
 				</Grid>
