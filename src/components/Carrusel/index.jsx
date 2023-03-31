@@ -21,52 +21,52 @@ const Carrusel = () => {
       <div className="acordeon-container">
       <ul className="acordeon">
         <li>
-          <Image alt="" src={img1} className="thumbnail"/>
+          <Image alt="" src={img1} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img1} className="thumbnail" />
+            <Image alt="" src={img1} unoptimized className="thumbnail" />
           </div>
         </li>
         <li>
-          <Image alt="" src={img6} className="thumbnail"/>
+          <Image alt="" src={img6} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img6} className="thumbnail"/>
+            <Image alt="" src={img6} unoptimized className="thumbnail"/>
           </div>
         </li>
         <li>
-          <Image alt="" src={img4} className="thumbnail"/>
+          <Image alt="" src={img4} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img4} className="thumbnail"/>
+            <Image alt="" src={img4} unoptimized className="thumbnail"/>
           </div>
         </li>
         <li>
-          <Image alt="" src={img5} className="thumbnail2"/>
+          <Image alt="" src={img5} unoptimized className="thumbnail2"/>
           <div>
-            <Image alt="" src={img5} className="thumbnail2"/>
+            <Image alt="" src={img5} unoptimized className="thumbnail2"/>
           </div>
         </li>
         
         <li>
-          <Image alt="" src={img7} className="thumbnail"/>
+          <Image alt="" src={img7} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img7} className="thumbnail"/>
+            <Image alt="" src={img7} unoptimized className="thumbnail"/>
           </div>
         </li>
         <li>
-          <Image alt="" src={img8} className="thumbnail"/>
+          <Image alt="" src={img8} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img8} className="thumbnail"/>
+            <Image alt="" src={img8} unoptimized className="thumbnail"/>
           </div>
         </li>
         <li>
-          <Image alt="" src={img3} className="thumbnail"/>
+          <Image alt="" src={img3} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img3} className="thumbnail"/>
+            <Image alt="" src={img3} unoptimized className="thumbnail"/>
           </div>
         </li>
         <li>
-          <Image alt="" src={img2} className="thumbnail"/>
+          <Image alt="" src={img2} unoptimized className="thumbnail"/>
           <div>
-            <Image alt="" src={img2} className="thumbnail2"/>
+            <Image alt="" src={img2} unoptimized className="thumbnail2"/>
           </div>
         </li>
       </ul>
