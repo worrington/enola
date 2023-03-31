@@ -6,7 +6,7 @@ const SliderImage: React.FC = () => {
 
 return (
 	<div className="slider">
-		<Image src={video} alt="" className="img" unoptimized/>
+		<Image src={video} alt="" className="img" unoptimized priority/>
 		<div className="mask" />
 		<div className="container">
 			<div className="swiper-slide">

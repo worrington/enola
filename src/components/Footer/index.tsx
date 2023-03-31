@@ -26,7 +26,7 @@ function Footer() {
       <Grid item xs={12} md={6}>
         <h4 style={{padding: "0.5rem"}}>Copyright © 2023 Enola. Todos los derechos reservados</h4>
       </Grid>
-      <div>
+      <div style={{display: "flex", alignItems: "center"}}>
         <Politicas /> |
         <Aviso />
       </div>

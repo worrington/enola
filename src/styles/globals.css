@@ -225,12 +225,12 @@ header {
   width: 706px;
 }
 .subtitle-main {
-  font-size: 40px;
+  font-size: 40px!important;
   color: #293461;
   position: relative;
   display: initial;
-  margin-bottom: 2rem;
-  font-weight: 400;
+  margin-bottom: 2rem!important;
+  font-weight: 400!important;
 }
 .subtitle-main:before {
   position: absolute;
@@ -256,8 +256,8 @@ header {
 }
 .subtitle-secondary {
   position: relative;
-  margin-top: 2rem;
-  font-size: 22px;
+  margin-top: 2rem!important;
+  font-size: 20px!important;
 }
 .politicas {
   padding: 2rem;
